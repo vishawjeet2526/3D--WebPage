@@ -37,18 +37,19 @@ body{
 }
 /* header */
 header{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
 }
 header h1{
-    display: flex;
+    margin: 0;
     font-size: 3rem;
     font-weight: 300;
 }
 nav{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     margin-left: -5%;
 }
@@ -75,8 +76,99 @@ nav a:hover{
     cursor: pointer;
 }
 .cta-button:hover{
-    background-color: white;
-    color: white;
+    background-color: black;
+    color: #333;
 }
+/* MAIN CONTENT */
+MAIN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(90vh-6rem);
 
+}
+.content{
+    max-width: 40rem;
+    margin-left: 10%;
+    z-index: 999;
+}
+.tag-box{
+    position: relative;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #ff00cc, #3333ff, #00ffff, #33ff33, #ffff00, #ff6600, #ff00cc);
+    animation: animateGradient 10s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 225, 0.5);
+}                               
+@keyframes animateGradient {
+    to{
+        background-position: 200% ;
+    }  
+}
+.tag-box .tag{
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: 0.5s ease;
+    cursor: pointer;
+}
+.tag-box .tag:hover{
+    color: #5300a0;
+    background: linear-gradient(to right, #ff00cc, #3333ff, #00ffff, #33ff33, #ffff00, #ff6600, #ff00cc);
+}
+.content h1{
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin: 1rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
+}
+.description{
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    max-width: 35rem;
+    color: gray;
+}
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.btn-get-started{
+    border: 1px solid #2a2a2a;
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.btn-get-started:hover{
+    background: linear-gradient(to right, #ff00cc, #3333ff, #00ffff, #33ff33, #ffff00, #ff6600, #ff00cc);
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    border: none;
+}
+.btn-singing-main{
+    text-decoration: none;
+    border: 1px solid #2a2a2a;
+    padding: 0.6rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    background-color: lightgrey;
+    color: black;
 
+}
+.btn-singing-main:hover{
+    background: linear-gradient(to right, #ff00cc, #3333ff, #00ffff, #33ff33, #ffff00, #ff6600, #ff00cc);
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    border: none;
+}

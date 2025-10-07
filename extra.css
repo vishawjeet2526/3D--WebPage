@@ -1,0 +1,33 @@
+#656565, #7f42a7, #6600c5, #3300ff, #00ccff, #00ffcc, #33ff66, #99ff33, #ffff00, #ffcc00, #ff6600, #ff3300, #ff0033, #ff0066, #ff0099, #ff00cc);
+     background-size: 300% 300%;
+     animation: animateGradient 10s linear infinite;
+ 
+ @keyframes animateGradient {
+     0% { background-position: 0% 50%; }
+     50% { background-position: 100% 50%; }
+     100% { background-position: 0% 50%; }
+ }
+ 
+ body{
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     background-color: #121212;
+     color: white;
+ }
+ 
+ a{
+     text-decoration: none;
+     color: white;
+ }
+ 
+ button{
+     font-family: 'Poppins', sans-serif;
+     font-size: 1rem;
+     padding: 0.5rem 1rem;
+     border: none;
+     border-radius: 25px;
+     background-color: white;
+     color: black;
+     font-weight: 600;
+     transition: all 0.3s ease; 
