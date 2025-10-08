@@ -172,3 +172,65 @@ MAIN{
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     border: none;
 }
+.robot{
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+@media (max-width: 1300px){
+    header{
+        padding: 1rem 0.5rem;
+    }
+}
+.content{
+    margin-top: 85%;
+}
+.robot{
+    top: -20%;
+    right: 2%;
+    scale: 0.8;
+}
+@media (max-width: 768px){
+    header{
+        padding: 1rem 0.1rem;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    nav{
+        display: none;
+    }
+   .cta-button{
+        padding: 0.6rem 1.5rem;
+   }
+   .content{
+    margin-top: 25rem;
+   }
+   .robot{
+    top: -25%;
+    right: 0%;
+    scale: 0.5;
+   }
+   .content{
+    max-width: 30rem;
+    margin-left: 10%;
+   }
+   .tag-box{
+    width: 12rem;
+   }
+    .content h1{
+     font-size: 2.5rem;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    .btn-get-started{
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+    .btn-singing-main{
+        font-size: 0.8rem;
+        padding: 0.5rem 2rem;
+    }
+
+}
